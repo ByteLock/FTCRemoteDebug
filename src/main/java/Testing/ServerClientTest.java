@@ -6,7 +6,7 @@ import com.bytelock.RemoteDebug.packet.Packet;
 
 import java.util.Scanner;
 
-public class Test {
+public class ServerClientTest {
 
     private static boolean stayConnected = true;
     private static boolean run = true;
@@ -26,7 +26,7 @@ public class Test {
                 remoteClient.connect("localhost", 8223);
                 stayConnected = true;
 
-                // while we want to our client to stay connected, keeping taking input
+                // while we want to our client to stay connected, keep taking input
                 while (stayConnected) {
                     // Read input
                     Scanner input = new Scanner(System.in);
